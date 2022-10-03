@@ -1,0 +1,104 @@
+
+.team-work{
+  padding-bottom: 150px;
+}
+.info-text{
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 27px;
+  color: #525252;
+}
+
+.team-list{
+  width: 100%;
+  max-width: 1045px;
+  margin-top: 200px;
+  flex-wrap: wrap;
+}
+
+.team-item{
+  position: relative;
+  width: 220px;
+  &:not(:last-child){
+    margin-bottom: 205px;
+  }
+  &:nth-child(4){
+    margin-bottom: 0;
+  }
+  &::before{
+    position: absolute;
+    top: -95px;
+    left: 0;
+    right: 0;
+    content: "";
+    display: block;
+    width: 65px;
+    height: 65px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+  }
+  &:nth-child(1)::before{
+    background-image: url("../images/game-dv.svg");
+  }
+  &:nth-child(2)::before{
+    background-image: url("../images/PC.svg");
+  }
+  &:nth-child(3)::before{
+    background-image: url("../images/ps4.svg");
+  }
+  &:nth-child(4)::before{
+    background-image: url("../images/vr.svg");
+  }
+  &:nth-child(5)::before{
+    background-image: url("../images/vr.svg");
+  }
+  &:nth-child(6)::before{
+    background-image: url("../images/3d-model.svg");
+  }
+}
+
+.team-title{
+  &::after{
+    position: absolute;
+    right: 0;
+    left: 0;
+    display: block;
+    width: 21px;
+    height: 18px;
+    margin: 0 auto;
+    margin-top: 26px;
+    background-image: url("../images/arrow.svg");
+    background-repeat: no-repeat;
+    content: "";
+  }
+}
+
+@media only screen and (min-width:768px) {
+
+  .info-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #525252;
+  }
+
+  .team-item{
+    &:nth-child(4){
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media only screen and (min-width:930px) {
+
+  .team-work{
+    padding-bottom: 176px;
+  }
+
+  .team-item{
+    &:nth-child(4){
+      margin-bottom: 205px;
+    }
+  }
+}

@@ -1,0 +1,161 @@
+.our-carusel{
+  width: 100%;
+  padding: 55px 20px;
+  padding-bottom: 140px;
+  background-color: #F4F4F4;
+}
+
+.adv-information{
+  margin-bottom: 33px;
+  max-width: 545px;
+}
+
+
+.carusel-items{
+  width: 100%;
+  max-width: 299px;
+  margin: 0 auto;
+  padding: 30px 30px 24px 28px;
+  background-color: #fff;
+  border: none;
+  box-shadow: 0px 4px 94px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+}
+
+.card-element{
+  display: inline-block!important;
+  margin-bottom: 18px;
+  padding: 5px 11px;
+  font-size: 14px;
+  line-height: 187.5%;
+  background-color: #0cbe6426;
+}
+
+.text-danger{
+  background-color:  #dc00001a;;
+}
+
+.text-fiolet{
+  color: #B000DC;
+  background-color: #b000dc1c;
+}
+
+.text-primary{
+  background-color: #0058dc17;
+}
+
+.carusel-title{
+  margin-top: 0;
+  margin-bottom: 14px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 187.5%;
+}
+
+.carusel-text{
+  margin-bottom: 7px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 187.5%;
+  color: #525252;
+}
+
+
+.carusellink{
+  position: relative;
+  margin-right: 20px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 187.5%;
+  color: #DC7000;
+  &::before{
+    position: absolute;
+    top: 5px;
+    left: 78px;
+    content: "";
+    width: 11px;
+    height: 11px;
+    background-image: url("../images/arrow.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.owl-nav{
+  position: relative;
+  & .owl-prev{
+    position: absolute;
+    top: 46px;
+    right: 82px;
+  }
+  & .owl-next{
+    position: absolute;
+    top: 46px;
+    right: 20px;
+  }
+}
+
+.owl-prev{
+  display: block;
+  width: 39px;
+  height: 39px;
+  background-color: #fff!important;
+  background-image: url("../images/arrow-left.svg")!important;
+  background-size: 7px 13px;
+  background-repeat: no-repeat!important;
+  background-position: center!important;
+  border-radius: 50%!important;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.12);
+  & span{
+    display: none;
+  }
+}
+.owl-next{
+  width: 39px;
+  height: 39px;
+  background-color: #fff!important;
+  background-image: url("../images/arrow-right.svg")!important;
+  background-size: 7px 13px;
+  background-repeat: no-repeat!important;
+  background-position: center!important;
+  border-radius: 50%!important;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.12);
+  & span{
+    display: none;
+  }
+}
+@media only screen and (min-width:900px) {
+
+  .adv-title{
+    margin-bottom: 32px!important;
+  }
+
+  .our-carusel{
+    padding: 0;
+    padding-top: 69px;
+    padding-bottom: 100px;
+  }
+
+  .adv-information{
+    margin-bottom: 65px;
+  }
+
+  .carusel-items{
+    max-width: 378px;
+  }
+
+  .owl-stage{
+    margin-left: -100px;
+  }
+
+  .owl-nav{
+    & .owl-prev{
+      top: -400px;
+      right: 200px;
+    }
+    & .owl-next{
+      top: -400px;
+      right: 146px;
+    }
+  }
+}
